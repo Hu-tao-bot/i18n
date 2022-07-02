@@ -1,8 +1,8 @@
-## วิธีการ Pull เพื่อให้เรานำภาษานี้เข้าสู่บอทของเรา
+## วิธีการเปิด Pull request
 ในขั้นตอนนี้เป็นสิ่งสำคัญในการ Pull เพื่อทางเรานั้นจะทำการอัพภาษานี้เข้าสู่บอทของเรา
 
 ## 1. การตั้งชื่อ File
-ในการตั้งชื่อ File นั้นจะต้องไปเป็นตามของ [BCP 47 Code](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_subtags) 
+ในการตั้งชื่อ File นั้นจะต้องไปเป็นตามของ [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_subtags) 
 ใน Subtag เพื่อให้ทางเรานั้นสะดวกในการอัพขึ้นบอท Hu tao โดยให้ตั้งชื่อ File ดังนี้ (โดยส่วนนี้จะอ้างอิงกับ [Discord developer locals](https://discord.com/developers/docs/reference#locales))
 
 |             ภาษา          | ชื่อไฟล์ที่ต้องตั้ง |

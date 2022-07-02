@@ -1,18 +1,20 @@
 # โครงสร้างของ i18n
+THAI | [ENG](../docs/README_LANG_EN.md)
+----
 ```
 \lang
 |
-|-\interaction
-| |
-| |- th.yaml
-| |- en-us.yaml
-| |- ...
+|---\interaction
+|   |
+|   |- th.yaml
+|   |- en-us.yaml
+|   |- ...
 |
-|-\commands
-| |
-| |- th.yaml
-| |- en-us.yaml
-| |- ...
+|----\commands
+|   |
+|   |- th.yaml
+|   |- en-us.yaml
+|   |- ...
 |
 |- i18n.yaml
 ```

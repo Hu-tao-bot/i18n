@@ -1,4 +1,6 @@
 # Interaction 
+THAI | [ENG](../../docs/README_INTERACTION_EN.md)
+----
 Interaction เป็นส่วนสำหรับการแสดงข้อมูลหน้า Embed เช่น ข้อมูลตัวละคร, ข้อมูลโลก, ข้อผิดพลาด และอื่น ๆ
 
 ## ความหมายของคีย์
