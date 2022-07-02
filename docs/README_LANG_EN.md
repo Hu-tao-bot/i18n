@@ -18,6 +18,6 @@
 |
 |- i18n.yaml
 ```
-- [interaction](./interaction/) : Is Folder for show Embed like Character info, Summary world, Error and etc.
-- [commands](./commands/) : Is Folder show slash command description **(Discord dosen't enable this service)**
-- [i18n.yaml](./i18n.yaml) : IS File for show available language.
+- [interaction](../lang/interaction/) : Is Folder for show Embed like Character info, Summary world, Error and etc.
+- [commands](../lang/commands/) : Is Folder show slash command description **(Discord dosen't enable this service)**
+- [i18n.yaml](../lang/i18n.yaml) : IS File for show available language.
