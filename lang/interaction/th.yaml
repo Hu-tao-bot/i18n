@@ -1,0 +1,366 @@
+info:
+  type: "ORANGE"
+  title: ":information_source: ข้อมูลเกี่ยวกับบอท"
+  description: |
+    {bot_name} เป็นบอทสำหรับดูข้อมูลระบบ Profile, Realtime, Abyss และอื่น ๆ อีกมากมายของเกมส์ Genshin Impact โดยเฉพาะ
+
+    **[Features]**
+    > - ดูข้อมูล Profile (UID, Username, Level)
+    > - ดูข้อมูล Realtime (Resin, คำขอประจำวัน, การออกสำรวจ)
+    > - ดูข้อมูล Abyss รอบนี้
+    > - ดูข้อมูลตัวละคร
+    > - แลกรหัสโค๊ตเกมส์ (Redeem code)
+    > - ดูข้อมูลประวัติตู้อธิฐานตั้งแต่ 1.0 - ปัจจุบัน
+    > - ~~ระบบเช็คอินประจำวัน (อยู่ช่วงทดสอบ)~~
+
+    **[พัฒนาโดย]**
+    {dev_name}
+
+  image: "{base_url}/{path_gif}/hu_tao@2x.gif"
+  footer: |
+    Credit picture: https://www.pixiv.net/en/artworks/86464433
+    Credit Animate: https://www.hoyolab.com/article/306313
+
+login:
+  type: "SUCCESS"
+  title: ":white_check_mark: คุณได้เข้าสู่ระบบแล้ว"
+  description: "หากต้องกาออกจากระบบ โปรดเข้าเว็บไซต์ {login_url} เพื่อทำการออกจากระบบ" 
+  image: "{base_url}/{path_characters}/hutao/8.png"
+
+profile:
+  type: "PRIMARY"
+  title: ":information_source: ข้อมูลบัญชี Genshin ของคุณ"
+  fields:
+    uid: "UID"
+    nickname: "ชื่อในเกมส์"
+    level: "เลเวล"
+    server: "เซิฟเวอร์"
+
+help:
+  type: "ORANGE"
+  image: "{base_url}/{path_characters}/hutao/8.png"
+  title: ":question: คำสั่งช่วยเหลือของบอท {bot_name}"
+  command: "**{command_name}**: `{command_desc}`"
+
+summary:
+  info:
+    type: "PRIMARY"
+    title: ":information_source: ข้อมูลภาพรวมของคุณ"
+    description: |
+      **[ข้อมูลทั่วไป]**
+      จำนวนวันใช้งาน: {day_used_time} ครั้ง
+      ความสำเร็จทั้งหมด: {achievements}
+      ตัวละครทั้งหมด: {characters} ตัว
+      ชั้น Abyss ปัจจุบัน: {abyss_floor}
+
+      **[การปลดล็อกจุดต่าง ๆ]**
+      Teleport:  {teleports} จุด
+      ดันเจี้ยน:     {domains} จุด
+
+      **[จำนวนเก็บไอเท็มอัพเสารูปปั้น]**
+      Anemoculus: {anemoculi} 
+      Geoculus: {geoculi}
+      Electroculus: {electroculi}
+
+      **[จำนวนเก็บกล่อง]**
+      Luxurious Chest: {luxurious_chests}
+      Precious Chest: {precious_chests}
+      Exquisite Chest: {exquisite_chests}
+      Common Chest: {common_chests}
+      Remarkable Chests: {remarkable_chests}
+      
+  world:
+    type: "PRIMARY"
+    title: ":information_source: ข้อมูลภาพรวมโลก"
+    unknown: "ไม่ทราบ"
+    world: |
+      การสำรวจ: {world_percentage}%
+      ระดับชื่อเสียง: Lv. {world_level}
+      {offering_data}
+    level: "เลเวล \"{offering_name}\": Lv. {offering_level}"
+
+  teapot:
+    type: "PRIMARY"
+    title: ":information_source: ข้อมูลบ้านกานํ้าชา"
+    image: 
+      teapot: "{base_url}/{path_teapot}/background/{filename}.png"
+      tubby: "{base_url}/{path_teapot}/tubby/tubby_level_{rank}.png"
+    description: |
+      ระดับความน่าเชื่อถือ: {teapot_level}
+      พลังเซียนแห่งสวรรคสูงสุด: {teapot_comfort}
+      ความเร็วรวบรวม Realm currency: {teapot_realm_currency_speed}/ขั่วโมง
+      ความเร็วในการสะสมรางวัล (Friendship): {teapot_friendship_speed}/ขั่วโมง
+      จำนวนเครื่องประดับที่ได้รับ: {teapot_item} ชิ้น
+      ประวัติผู้เยี่ยมชม: {teapot_visit} คน
+
+      กานํ้าชาที่มีอยู่ปัจจุบัน:
+      {teapot_current}
+
+    teapotcurrent: "- {teapot_name}"
+
+realtime:
+  type: "PURPLE"
+  title: ":information_source: ข้อมูล Realtime ของ Resin, คำขอประจำวัน, การออกสำรวจ"
+  fields:
+    resin: "Resin"
+    commission: "คำขอประจำวัน"
+    resin_discounts: "ส่วนลด Resin ของบอสประจำสัปดาห์"
+    expeditions: "การออกสำรวจ"
+    realm_currency: "Realm currency"
+    transformer: "Parametric Transformer"
+
+  expeditions:
+    ongoing: "กำลังออกสำรวจ" 
+    finished: "สำรวจเสร็จสิ้น"
+    notfound: "ไม่พบการสำรวจ"
+  
+  restore:
+    restore_complete: ""
+    restore_unit: "ฟื้นฟูสำเร็จเวลา {time}"
+
+  transformer:
+    cooldown_complete: "คูลดาวน์เสร็จสิ้น"
+    cooldown_unit: "คูดาวน์สำเร็จเวลา {time}"
+
+abyss:
+  info:
+    type: "PURPLE"
+    title: ":information_source: ข้อมูล Abyss รอบนี้ (รอบที่ {season})"
+    description: | 
+      **[ชั้นปัจจุบันคุณอยู่ที่]**: {max_floor}
+      **[จำนวนการต่อสู้]**: {total_battles} ครั้ง
+      **[จำนวนดาวที่ได้รับ]**: {total_stars} / {max_star} ดวง
+    fields:
+      most_played: "**ตัวละครที่เล่นมากที่สุด**"
+      most_kills: "**กำจัดศัตรูได้มากที่สุด**"
+      strongest_strike: "**โจมตีได้แรงที่สุด**"
+      most_damage_taken: "**สร้างความเสียหายมากที่สุด**"
+      most_bursts_used: "**ใช้ Bursts มากที่สุด**"
+      most_skills_used: "**ใช้ Skill ธาตุมากที่สุด**"
+
+    most_played: "{number}. {character_name} ({used_time} ครั้ง)" 
+    most_kills: "{number}. {character_name} ({kill_time} ตัว)"
+    strongest_strike: "{number}. {character_name} ({strike_time})"
+    most_damage_taken: "{number}. {character_name} ({damage_taken_time})"
+    most_bursts_used: "{number}. {character_name} ({used_time} ครั้ง)"
+    most_skills_used: "{number}. {character_name} ({used_time} ครั้ง)"
+
+  floor:
+    type: "WHITEPURPLE"
+    title: ":information_source: ข้อมูล Abyss ชั้นที่ {floor}"
+    image: "{base_url}/{path_characters}/abyss/458.png"
+    description: |
+      **[จำนวนดาวที่ได้รับ]**: {stars} / {max_stars}
+      **[ตัวละครชั้นบน]**
+      {character_top}
+
+      **[ตัวละครชั้นล่าง]**:
+      {character_bottom}
+
+      **[จำนวนดาวแต่ละชั้น]**:
+    fields:
+      room: "**ห้องที่ {room}**"
+
+    character: "{number}. {character_name} (Lv. {character_level})"
+    notfound: "ไม่พบตัวละครชั้นนี้"
+
+characters:
+  list:
+    type: "PRIMARY"
+    title: ":information_source: ข้อมูลตัวละครทั้งหมด ({total_characters} ตัว)"
+  info:
+    type: "PRIMARY"
+    title: ":information_source: ข้อมูลตัวละคร \"{character_name}\""
+    description: |
+      {character_star_icon} ({character_star_text} ดาว)
+      **[ข้อมูลตัวละครของคุณ]**
+      - เลเวล: {character_level}
+      - ความประทับใจ: {character_friendship}
+      - กลุ่มดาว: C{character_constellation}
+
+      **[อาวุธ]**
+      - {weapon_name} (Lv. {weapon_level}) (R{weapon_refinement})
+
+      **[อาติแฟส]**
+      {artifact}
+
+      **[เซ็ตอาติแฟส]**
+      {artifact_sets}
+    
+    artifacts_sets: |
+      - {artifacts_set_name}
+      ----------------------------------------
+      {artifacts_set_datas}
+
+    artifacts_set_details: |
+      {artifact_set_is_enabled} เซ็ต {artifacts_set_pieces} อัน:
+      {artifact_set_detail}
+
+redeemcode:
+  type: "SUCCESS"
+  title: ":white_check_mark: แลกรหัสสำเร็จ"
+  image: "{base_url}/{path_characters}/paimon/11.png"
+  description: "แลกรหัสสำเร็จ โปรดตรวจสอบกล่องข้อความในเกมส์ของคุณ"
+
+wish:
+  list:
+    type: "PRIMARY"
+    title: ":stars: ตู้กิจกรรมการอธิษฐาน ในเวอร์ชั่น {version}"
+    description: |
+      ลองเลือกตู้อธิษฐานที่อยากดูกันนะ
+
+    footer: |
+      ข้อมูลจากเว็บไซต์
+      https://genshin-impact.fandom.com/th/wiki/การอธิษฐาน/รายการ
+
+    components:
+      select:
+        placeholder: "เลือกตู้กิจกรรมอธิษฐาน"
+
+    detail:
+      color: "BLUESKY"
+      title: ":information_source: ตู้กิจกรรมการอธิษฐาน \"{banner_title}\""
+      description: |
+        **[ระยะเวลา]**
+        เริ่ม: {start_date}
+        สิ้นสุด: {end_date}
+
+        **[ข้อมูลตัวละคร]**
+
+      fields:
+        fivestars: "5 ดาว"
+        fourstars: "4 ดาว"
+
+daily:
+  auto-cliam-opened:
+    type: "SUCCESS"
+    title: ":white_check_mark: เปิดระบบเช็คอินอัตโนมัติสำเร็จ"
+    image: "{base_url}/{path_characters}/hutao/8.png"
+    description: |
+      เช็คอินอัตโนมัติถูกเปิดแล้ว หากต้องการปิด Feature นี้ สามารถพิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบเช็คอินอัตโนมัติ
+
+      **[หมายเหตุ]**
+      ระบบจะเช็คอินทุก ๆ เที่ยงคืน (00:00 น.) (UTC+7) ของวันถัดไป หากนักเดินทางต้องการเปลี่ยนเวลา สามารถเปลี่ยนได้ที่เว็บไซต์ {login_url} เลยนะ ~ !
+
+  auto-cliam-closed:
+    type: "SUCCESS"
+    title: ":x: ปิดระบบเช็คอินอัตโนมัติสำเร็จ"
+    image: "{base_url}/{path_characters}/hutao/4.png"
+    description: |
+      เช็คอินอัตโนมัติถูกปิดแล้ว หากต้องการเปิด Feature นี้ สามารถพิมพ์คำสั่งนี้อีกครั้งเพื่อปิดระบบเช็คอินอัตโนมัติได้เลยนะ ~ !
+
+  daily-month:
+    type: "PRIMARY"
+    title: ":information_source: รายการเช็คอินประจำวัน"
+    image: "{base_url}/{path_characters}/hutao/3.png"
+    description: |
+      ข้อมูลวันที่: {date}
+      
+      {data_list}
+
+  daily-cliamed:
+    type: "SUCCESS"
+    title: ":white_check_mark: เช็คอินสำเร็จ"
+    description: |
+      วันนี้คุณได้รับรางวัล **{reward_name}** ({reward_amount}x)
+
+errors:
+  LOGIN_REQUIRED:
+    type: "WARNING"
+    title: ":warning: โปรดเข้าสู่ระบบ"
+    description: "ดูเหมือนว่าในระบบเราไม่ได้บันทึกบัญชี Genshin ของคุณ กรุณาเข้าสู่ระบบผ่านเว็บ {login_url}"
+    image: "{base_url}/{path_characters}/hutao/4.png"
+
+  USER_NOT_PUBLIC:
+    type: "WARNING"
+    title: ":warning: ไม่นะ เราดูข้อมูลของคุณไม่ได้"
+    description: "ดูเหมือนว่าข้อมูลของคุณยังไม่ได้เปิดใช้งานฟังชั่นนี้ ลองตรวจสอบการเปิดใช้งานที่กาตั้งค่าเว็บ Hoyolab"
+    image: "{base_url}/{path_characters}/diona/282.png"
+
+  DATA_NOT_FOUND:
+    type: "ERROR"
+    title: ":x: ไม่พบข้อมูลในเกมส์"
+    description: "ดูเหมือนว่าเกมส์ของคุณยังไม่ได้บันทึกข้อมูลของคุณ เดียวรอซักพักแล้วค่อยกลับมาดูใหม่นะ"
+    image: "{base_url}/{path_characters}/hutao/5.png"
+
+  ABYSS_FLOOR_USER_NOT_FOUND:
+    type: "WARNING"
+    title: ":question: ไม่เจอแฮ่ะ"
+    description: "ดูเหมือนว่าข้อมูลห้องนี้เหมือนจะไม่มีนะ ลอง ๆ ไปลง Abyss ดูเผื่ออาจขึ้นก็ได้"
+    image: "{base_url}/{path_characters}/paimon/13.png"
+
+  ABYSS_FLOOR_RANGE_ERROR:
+    type: "ERROR"
+    title: ":warning: โปรดเลือกห้องระหว่าที่ 1 - 12"
+    description: "ห้องนั้นเหมือนจะไม่มีนะ เจอแต่ห้อง 1 - 12 ลองเลือกดูใหม่นะ"
+    image: "{base_url}/{path_characters}/paimon/14.png"
+
+  CHARACTERS_NOT_FOUND:
+    type: "ERROR"
+    title: ":question: ไม่พบตัวละคนที่คุณค้นหา"
+    description: "เหมือนจะไม่พบนะ ลองค้นดูใหม่กันเถอะ"
+    image: "{base_url}/{path_characters}/keqing/196.png"
+
+  RATE_LIMIT:
+    type: "WARNING"
+    title: ":warning: เฮ้! ช้าก่อนนะ"
+    description: "ดูเหมือนว่าคุณจะใช้คำสั่งถี่เกินไปนะ โปรดรออีกซัก {timeout} วินาทีนะ"
+    image: "{base_url}/{path_characters}/keqing/180.png"
+
+  REDEEM_INVALID: # AKA (Redeem Expired, Redeem Invaild)
+    type: "ERROR"
+    title: ":x: รหัสนี้ใช้งานไม่ได้"
+    description: "ดูเหมือนว่ารหัสนี้ไม่ถูกต้องหรือหมดอายุแล้ว ลองตรวจสอบดูเหมือนว่าคุณกรอกรหัสผิดหรือไม่"
+    image: "{base_url}/{path_characters}/paimon/431.png"
+
+  REDEEM_CLAIMED:
+    type: "WARNING"
+    title: ":warning: รหัสนี้ได้ถูกใช้ไปแล้ว"
+    description: "ดูเหมือนว่ารหัสนี้ได้ถูกใช้ไปแล้ว ลองหารหัสดูใหม่กับเถอะ"
+    image: "{base_url}/{path_characters}/paimon/406.png"
+
+  REDEEM_COOLDOWN:
+    type: "WARNING"
+    title: ":warning: เฮ้ ช้า ๆ หน่อย"
+    description: "ดูเหมือนว่าคุณจะกรอกถี่ไปนิดนะ รออักสักครู่ก่อนนะ"
+    image: "{base_url}/{path_characters}/keqing/180.png"
+
+  REDEEM_EXCEPTION: # AKA (Low AR.)
+    type: "WARNING"
+    title: ":warning: AR. (Adventure Rating) ของคุณตํ่า"
+    description: "ดูเหมือนว่าคุณมี AR. (Adventure Rating) น้อยกว่าที่กำหนด เล่นไปอีกสักพักนะ เดียวค่อยลองมากรอกใหม่"
+    image: "{base_url}/{path_characters}/kaedeharakazuha/75.png"
+
+  REDEEM_LOGIN_REQUIRED:
+    type: "WARNING"
+    title: ":warning: เอ๊ะ? ไม่ได้เปิดฟั่งชั่น Redeem code นะ"
+    description: "ลองไปตรวจสอบดูว่าได้เปิดฟั่งชั่นนี้หรือยัง?"
+    image: "{base_url}/{path_characters}/keqing/111.png"
+
+  COMMAND_NOT_SUPPORT:
+    type: "ERROR"
+    title: ":x: คำสั่งนี้ใช้งานไม่ได้"
+    description: "คำสั่งนี้ไม่สามารถใช้ได้กับวิธีการเข้าสู่ระบบด้วย UID หรือ Hoyolab ID นะ อาจลองเปลี่ยนใจไปเข้าสู่ระบบด้วย Token หรือ Email & Password ก็ได้นะ เผื่ออาจใข้งานได้"
+    image: "{base_url}/{path_characters}/keqing/183.png"
+
+  GACHA_NOT_FOUND:
+    type: "ERROR"
+    title: ":warning: เอ๋ ไม่พบข้อมูลตู้อธิฐานนี้"
+    description: "เราว่าเราหากันไม่เจอน่ะ ลองไปค้าหาตู้อื่นดูกัน"
+    image: "{base_url}/{path_characters}/eula/28.png"
+
+  DAILY_ALREADY_CLAIMED:
+    type: "ERROR"
+    title: ":x: คุณได้เช็คอินวันนี้แล้ว"
+    description: "คุณได้เช็คอินวันนี้ไปแล้วนะ เดียวรอพรุ่งนี้ก่อนนะ"
+    image: "{base_url}/{path_characters}/yoimiya/60.png"
+
+  UNKNOW_ERROR: # IF NOT FOUND ERROR EXCEPTION
+    type: "ERROR"
+    title: ":x: ขออภัย เกิดข้อผิดพลาดบางอย่าง"
+    description: |
+      ระบบไม่สามารถตรวจสอบได้ว่าข้อผิดพลาดนี้เกิดจากอะไร โปรดแจ้งเราโดยการคลิกที่ปุ่มลิงค์ด้านล่างนะ
+
+    image: "{base_url}/{path_characters}/ganyu/309.png"
+    footer: รหัสข้อผิดพลาด {error_code}
+    

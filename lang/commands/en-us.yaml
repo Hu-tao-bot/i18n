@@ -1,0 +1,23 @@
+genshin.login: "Check login status."
+genshin.profile: "Profile data"
+genshin.realtime: "Realtime data of Resin, Daily Quest, Survey, Realm Currency and etc."
+genshin.redeem: "Redemption code."
+genshin.redeem.options:
+  code: "Redemption code."
+genshin.summary.info: "Get summary (days used, achievement, characters, etc.)"
+genshin.summary.world: "Get world explorations summary."
+genshin.summary.teapot: "Get serenitea pot summary."
+genshin.abyss.info: "Get Spiral Abyss in this time."
+genshin.abyss.floor: "Get Spiral Abyss with floor."
+genshin.abyss.floor.options:
+  floor: "Floor (1 - 12)"
+genshin.character.list: "Get character list."
+genshin.character.info: "Get character info."
+genshin.character.info.options:
+  query: "Name of character."
+genshin.wish.info: "Get info wish banner."
+genshin.wish.info.options:
+  version: "Version of game."
+genshin.daily.month: "Get daily login reward of this month."
+genshin.daily.claim: "Get daily login reward of today."
+genshin.daily.auto-claim: "Enable & Disable auto daily login reward."

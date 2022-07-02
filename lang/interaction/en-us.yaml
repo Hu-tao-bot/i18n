@@ -1,0 +1,366 @@
+info:
+  type: "ORANGE"
+  title: ":information_source: Info boy"
+  description: |
+    {bot_name} is discord bot fot get profile, realtime, abyss, etc. from Genshin Impact game.
+
+    **[Features]**
+    > - Profile data (UID, Username, Level)
+    > - Realtime data (Resin, Commission, Expeditions and etc.)
+    > - Spiral abyss data
+    > - Character data
+    > - Redeem code
+    > - Wish data (1.0 - now)
+    > - ~~Auto daily checkin (WIP)~~
+
+    **[Developer]**
+    {dev_name}
+
+  image: "{base_url}/{path_gif}/hu_tao@2x.gif"
+  footer: |
+    Credit picture: https://www.pixiv.net/en/artworks/86464433
+    Credit Animate: https://www.hoyolab.com/article/306313
+
+login:
+  type: "SUCCESS"
+  title: ":white_check_mark: You logged"
+  description: "If you want logout. Please enter site {login_url} to logout." 
+  image: "{base_url}/{path_characters}/hutao/8.png"
+
+profile:
+  type: "PRIMARY"
+  title: ":information_source: My account."
+  fields:
+    uid: "UID"
+    nickname: "Name"
+    level: "Level"
+    server: "Server"
+
+help:
+  type: "ORANGE"
+  image: "{base_url}/{path_characters}/hutao/8.png"
+  title: ":question: Help command of {bot_name} bot"
+  command: "**{command_name}**: `{command_desc}`"
+
+summary:
+  info:
+    type: "PRIMARY"
+    title: ":information_source: Summary"
+    description: |
+      **[General]**
+      Day active: {day_used_time} days
+      Achievements: {achievements} 
+      Aharacters: {characters}
+      Spiral Abyss: {abyss_floor}
+
+      **[Unlocked]**
+      Teleport:  {teleports} 
+      Domains:     {domains}
+
+      **[Statue Pillar]**
+      Anemoculus: {anemoculi} 
+      Geoculus: {geoculi}
+      Electroculus: {electroculi}
+
+      **[Chests]**
+      Luxurious Chest: {luxurious_chests}
+      Precious Chest: {precious_chests}
+      Exquisite Chest: {exquisite_chests}
+      Common Chest: {common_chests}
+      Remarkable Chests: {remarkable_chests}
+      
+  world:
+    type: "PRIMARY"
+    title: ":information_source: World Exploration"
+    unknown: "Unknown"
+    world: |
+      Explored: {world_percentage}%
+      Offerings: Lv. {world_level}
+      {offering_data}
+    level: "\"{offering_name} Level\": {offering_level}"
+
+  teapot:
+    type: "PRIMARY"
+    title: ":information_source: Teapot"
+    image: 
+      teapot: "{base_url}/{path_teapot}/background/{filename}.png"
+      tubby: "{base_url}/{path_teapot}/tubby/tubby_level_{rank}.png"
+    description: |
+      Trust rank: {teapot_level}
+      Highest adeptal energy: {teapot_comfort}
+      Realm currency accumulation Rate: {teapot_realm_currency_speed}/Hr.
+      Realm bounty accumulation Rate: {teapot_friendship_speed}/Hr.
+      Total Furnishings Obtained: {teapot_item}
+      Visitor History: {teapot_visit}
+
+      Realm layout now:
+      {teapot_current}
+
+    teapotcurrent: "- {teapot_name}"
+
+realtime:
+  type: "PURPLE"
+  title: ":information_source: Realtime of Resin, Commission, Expeditions, etc."
+  fields:
+    resin: "Resin"
+    commission: "Commission"
+    resin_discounts: "Resin discounts weekend"
+    expeditions: "Expeditions"
+    realm_currency: "Realm currency"
+    transformer: "Parametric Transformer"
+
+  restore:
+    restore_complete: ""
+    restore_unit: "Restore complete at {time}"
+
+  transformer:
+    cooldown_complete: "Cooldown completed"
+    cooldown_unit: "Cooldown complete at {time}"
+
+  expeditions:
+    ongoing: "On going" 
+    finished: "Finished"
+    notfound: "Not found any expeditions"
+
+abyss:
+  info:
+    type: "PURPLE"
+    title: ":information_source: Sprial abyss (Season {season})"
+    description: | 
+      **[Max Floor]**: {max_floor}
+      **[Total Battles]**: {total_battles} Times.
+      **[Total Stars]**: {total_stars} / {max_star} Stars.
+    fields:
+      most_played: "**Most Played Characters**"
+      most_kills: "**Most Defeats**"
+      strongest_strike: "**Strongest Single Strike**"
+      most_damage_taken: "**Most Damage Taken**"
+      most_bursts_used: "**Elemental Bursts Unleashed	**"
+      most_skills_used: "**Elemental Skills Cast**"
+
+    most_played: "{number}. {character_name} ({used_time} Times)" 
+    most_kills: "{number}. {character_name} ({kill_time})"
+    strongest_strike: "{number}. {character_name} ({strike_time})"
+    most_damage_taken: "{number}. {character_name} ({damage_taken_time})"
+    most_bursts_used: "{number}. {character_name} ({used_time} Times.)"
+    most_skills_used: "{number}. {character_name} ({used_time} Times.)"
+
+  floor:
+    type: "WHITEPURPLE"
+    title: ":information_source: Sprial abyss of floor {floor}"
+    image: "{base_url}/{path_characters}/abyss/458.png"
+    description: |
+      **[Stars obtained]**: {stars} / {max_stars}
+      **[Top characters]**
+      {character_top}
+
+      **[Bottom characters]**:
+      {character_bottom}
+
+      **[Star of each floor]**:
+    fields:
+      room: "**{room}**"
+
+    character: "{number}. {character_name} (Lv. {character_level})"
+    notfound: "Not found any characters"
+
+characters:
+  list:
+    type: "PRIMARY"
+    title: ":information_source: Characters list (Total {total_characters})"
+  info:
+    type: "PRIMARY"
+    title: ":information_source: Character info \"{character_name}\""
+    description: |
+      {character_star_icon} ({character_star_text} Stars.)
+      **[Chracter info]**
+      - Level: {character_level}
+      - Friendship: {character_friendship}
+      - Constellation: C{character_constellation}
+
+      **[Weapon]**
+      - {weapon_name} (Lv. {weapon_level}) (R{weapon_refinement})
+
+      **[Artifacts]**
+      {artifact}
+
+      **[Artifacts sets]**
+      {artifact_sets}
+    
+    artifacts_sets: |
+      - {artifacts_set_name}
+      ----------------------------------------
+      {artifacts_set_datas}
+
+    artifacts_set_details: |
+      {artifact_set_is_enabled} {artifacts_set_pieces}x sets:
+      {artifact_set_detail}
+
+redeemcode:
+  type: "SUCCESS"
+  title: ":white_check_mark: Redeem succussfully"
+  image: "{base_url}/{path_characters}/paimon/11.png"
+  description: "Redeem succussfully. Please check your mail box in game."
+
+wish:
+  list:
+    type: "PRIMARY"
+    title: ":stars: Wish banner in version {version}"
+    description: |
+      Let's try to choose the wish banner that you want to see. 
+
+    footer: |
+      From site:
+      https://genshin-impact.fandom.com/wiki/Wishes/List
+
+    components:
+      select:
+        placeholder: "Please select wish banner."
+
+    detail:
+      color: "BLUESKY"
+      title: ":information_source: Event wish \"{banner_title}\""
+      description: |
+        **[Duration]**
+        Start: {start_date}
+        End: {end_date}
+
+        **[Characters info]**
+
+      fields:
+        fivestars: "5 Stars"
+        fourstars: "4 Stars"
+
+daily:
+  auto-cliam-opened:
+    type: "SUCCESS"
+    title: ":white_check_mark: Daily claim reward has been enabled"
+    image: "{base_url}/{path_characters}/hutao/8.png"
+    description: |
+      Daily claim reward has been enabled. If you want disable this feature, You can use command this again to disable this feature"
+
+      **[Note]**
+      System will claim reward every at the 12:00 AM (UTC+7) of each day. If traveler want to change the time of claiming, You can change time in site {login_url}
+
+  auto-cliam-closed:
+    type: "SUCCESS"
+    title: ":x: Daily claim reward has been disabled"
+    image: "{base_url}/{path_characters}/hutao/4.png"
+    description: |
+      Daily claim reward has been disabled. If you want enable this feature, You can use command this again to enable this feature"
+
+  daily-month:
+    type: "PRIMARY"
+    title: ":information_source: List of daily in this month"
+    image: "{base_url}/{path_characters}/hutao/3.png"
+    description: |
+      At: {date}
+
+      {data_list}
+
+  daily-cliamed:
+    type: "SUCCESS"
+    title: ":white_check_mark: Daily claim reward has been claimed"
+    description: |
+      You have claimed **{reward_name}** ({reward_amount}x) in this today.
+
+errors:
+  LOGIN_REQUIRED:
+    type: "WARNING"
+    title: ":warning: Please login first."
+    description: "Seems like you dont have genshin impact account linked into your discord account. please login first using this website {login_url}"
+    image: "{base_url}/{path_characters}/hutao/4.png"
+
+  USER_NOT_PUBLIC:
+    type: "WARNING"
+    title: ":warning: Oh no! We can't see account info."
+    description: "It looks like you did not activate this function. Please activate it via settings in Hoyolab website."
+    image: "{base_url}/{path_characters}/diona/282.png"
+
+  DATA_NOT_FOUND:
+    type: "ERROR"
+    title: ":x: Your account data could not be found in game."
+    description: "It seems that your game have not recorded 'your in-game' data. Please wait a while to back seen again."
+    image: "{base_url}/{path_characters}/hutao/5.png"
+
+  ABYSS_FLOOR_USER_NOT_FOUND:
+    type: "WARNING"
+    title: ":question: Data could not be found."
+    description: "It seem that you have not attempt the Spiral Abyss. Please journey your way through, in order to view the info."
+    image: "{base_url}/{path_characters}/paimon/13.png"
+
+  ABYSS_FLOOR_RANGE_ERROR:
+    type: "ERROR"
+    title: ":warning: Please select the floor number form 1 - 12."
+    description: "Looks like the floor that you selected is not listed above. Please select again from 1 - 12."
+    image: "{base_url}/{path_characters}/paimon/14.png"
+
+  CHARACTERS_NOT_FOUND:
+    type: "ERROR"
+    title: ":question: The character could not be found."
+    description: "The character could not be found. Please try searching again."
+    image: "{base_url}/{path_characters}/keqing/196.png"
+
+  RATE_LIMIT:
+    type: "WARNING"
+    title: ":warning: Woah! slow down traveler."
+    description: "You have execute too many command. Please wait for at least {timeout} seconds and try again."
+    image: "{base_url}/{path_characters}/keqing/180.png"
+
+  REDEEM_INVALID: # AKA (Redeem Expired, Redeem Invalid)
+    type: "ERROR"
+    title: ":x: Redemption code is invalid."
+    description: "It seem that the redemption code is invalid or expired. Please check the code and try again."
+    image: "{base_url}/{path_characters}/paimon/431.png"
+
+  REDEEM_CLAIMED:
+    type: "WARNING"
+    title: ":warning: Redemption has been already used."
+    description: "It seem that redemption has already been used. Please use another code."
+    image: "{base_url}/{path_characters}/paimon/406.png"
+
+  REDEEM_COOLDOWN:
+    type: "WARNING"
+    title: ":warning: Whoa! Cooldown"
+    description: "It seen you redemption so fast! Please wait a while and try again."
+    image: "{base_url}/{path_characters}/keqing/180.png"
+
+  REDEEM_EXCEPTION: # AKA (Low AR.)
+    type: "WARNING"
+    title: ":warning: ํYou Adventure Rating(AR.) is too low."
+    description: "It seem that your Adventure Rating(AR.) is too low. Please rise your AR. and try again."
+    image: "{base_url}/{path_characters}/kaedeharakazuha/75.png"
+
+  REDEEM_LOGIN_REQUIRED:
+    type: "WARNING"
+    title: ":warning: Eh? Redemption code function is not available."
+    description: "Redemption code function is not available. Please logout genshin impact account and try again."
+    image: "{base_url}/{path_characters}/keqing/111.png"
+
+  COMMAND_NOT_SUPPORT:
+    type: "ERROR"
+    title: ":x: Command does not support."
+    description: "This command is not compatable with 'UID' or 'Hoyolab ID' login. Please try an alternative method of login, such as Token login or Email & Password."
+    image: "{base_url}/{path_characters}/keqing/183.png"
+
+  GACHA_NOT_FOUND:
+    type: "ERROR"
+    title: ":warning: Eh? Banner wish not found."
+    description: "Banner wish not founded. Please search another banner wish."
+    image: "{base_url}/{path_characters}/eula/28.png"
+
+  DAILY_ALREADY_CLAIMED:
+    type: "ERROR"
+    title: ":x: You have already claimed today's daily reward."
+    description: "You have already claimed today's daily reward. Please try again tomorrow."
+    image: "{base_url}/{path_characters}/yoimiya/60.png"
+
+  UNKNOW_ERROR: # IF NOT FOUND ERROR EXCEPTION
+    type: "ERROR"
+    title: ":x: Oh no! Unknown error has occured."
+    description: |
+      We have detected an unknown error. Please report the problem via botton below.
+
+    image: "{base_url}/{path_characters}/ganyu/309.png"
+    footer: "Error code: {error_code}"
+    

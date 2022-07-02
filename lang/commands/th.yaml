@@ -1,0 +1,23 @@
+genshin.login: "ตรวจสอบสถานะเข้าสู่ระบบ"
+genshin.profile: "ดูข้อมูล Profile"
+genshin.realtime: "ดูข้อมูล Realtime ของ Resin, คำขอประจำวัน, การออกสำรวจ, Realm Currency และอื่น ๆ อีกมากมาย"
+genshin.redeem: "แลกรหัสเพื่อรับไอเทม"
+genshin.redeem.options:
+  code: "รหัสเพื่อรับไอเทม"
+genshin.summary.info: "ดูภาพรวมข้อมูล (จำนวนวันใช้งาน ความสำเร็จ, ตัวละคร, อื่น ๆ)"
+genshin.summary.world: "ดูข้อมูลสำรวจโลกกว้าง"
+genshin.summary.teapot: "ดูข้อมูลกานํ้าชา (Serenitea Pot)"
+genshin.abyss.info: "ดูข้อมูล Abyss รอบนี้"
+genshin.abyss.floor: "ดูข้อมูล Abyss ของชั้นนั้น"
+genshin.abyss.floor.options:
+  floor: "ชั้นของ Abyss (1 - 12)"
+genshin.character.list: "ดูรายชื่อตัวละคร"
+genshin.character.info: "ดูข้อมูลของตัวละครของคุณ"
+genshin.character.info.options:
+  query: "ชื่อตัวละคร"
+genshin.wish.info: "ดูข้อมูลกิจกรรมอธิษฐานทั้งหมด"
+genshin.wish.info.options:
+  version: "เวอร์ชั่นเกมส์"
+genshin.daily.month: "ดูข้อมูลการรับรางวัลเช็คอินของเดือนนี้"
+genshin.daily.claim: "รับรางวัลเช็คอินของวันนี้"
+genshin.daily.auto-claim: "รับรางวัลเช็คอินของวันนี้อัตโนมัติ"
